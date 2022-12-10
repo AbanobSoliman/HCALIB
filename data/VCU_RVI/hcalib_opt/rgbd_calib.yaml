@@ -1,0 +1,70 @@
+%YAML:1.0
+
+# ----------------------------------------
+# This YAML file is created using RGBD-CALIB
+# ----------------------------------------
+Camera.type: "PinHole"
+
+# Camera calibration and distortion parameters (OpenCV)
+Camera.fx: 278.61651900491745
+Camera.fy: 329.59653744988
+Camera.cx: 315.75650280881257
+Camera.cy: 174.6175361919314
+
+Camera.k1: -0.016122920140410057
+Camera.k2: -0.003546533131014472
+Camera.p1: -0.0024393111862829765
+Camera.p2: -0.010957422997069107
+Camera.k3: -0.000773205440621176
+
+Camera.width: 1024
+Camera.height: 1024
+
+# Camera frames per second
+Camera.fps: 20.0
+
+# IR projector baseline times fx (aprox.)
+Camera.bf: 5.189867721230944
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 0
+
+# Close/Far threshold. Baseline times.
+ThDepth: 40.0
+
+# Depth map values factor
+DepthMapFactor: 1000.0
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+# ORB Extractor: Number of features per image
+ORBextractor.nFeatures: 1000
+
+# ORB Extractor: Scale factor between levels in the scale pyramid
+ORBextractor.scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid
+ORBextractor.nLevels: 8
+
+# ORB Extractor: Fast threshold
+# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
+# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
+# You can lower these values if your images have low contrast
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500

@@ -1,0 +1,141 @@
+Solver Summary (v 2.0.0-eigen-(3.4.0)-lapack-eigensparse-no_openmp)
+
+                                     Original                  Reduced
+Parameter blocks                        19768                    19767
+Parameters                              69541                    69534
+Effective parameters                    68482                    68476
+Residual blocks                         35650                    35650
+Residuals                               74820                    74820
+
+Minimizer                        TRUST_REGION
+
+Sparse linear algebra library    EIGEN_SPARSE
+Trust region strategy     LEVENBERG_MARQUARDT
+
+                                        Given                     Used
+Linear solver                    SPARSE_SCHUR             SPARSE_SCHUR
+Threads                                    16                       16
+Linear solver ordering              AUTOMATIC               17475,2292
+Schur structure                         d,d,d                    d,d,d
+
+Cost:
+Initial                          1.279977e+04
+Final                            2.299191e+02
+Change                           1.256985e+04
+
+Minimizer iterations                     1001
+Successful steps                          963
+Unsuccessful steps                         38
+
+Time (in seconds):
+Preprocessor                         0.253270
+
+  Residual only evaluation         157.515313 (1000)
+  Jacobian & residual evaluation   278.713179 (963)
+  Linear solver                     55.373171 (1000)
+Minimizer                          537.153075
+
+Postprocessor                        0.149484
+Total                              537.555833
+
+Termination:                   CONVERGENCE
+
+
+------- Final Pose and P3D - Optimized -------------
+X:     34.57954153770135
+Y:     1.4787737799247183
+Z:     -0.5246898766387709
+qw:     0.9980380194995375
+qx:     -0.008957059781300538
+qy:     -0.003163321651137631
+qz:     0.009543298631530363
+tx:     41.46927928330245
+ty:     -1.6613499204228805
+tz:     -0.11222926907979876
+
+
+------- Final RGB Left Intrinsics -------------
+fx:      458.63448259605565 +- 44.87352930598218
+fy:      461.0366850983325 +- 42.86403948582567
+cx: 500.89344015784303 +- 50.47183382551829
+cy: 510.02405999525087 +- 56.36657856250142
+rad_k1: -0.0059002819967903545 +- 0.003930025179738744
+rad_k2: -0.001972053964438281 +- 0.0012096891802631457
+tan_p1: -0.0011792984096083868 +- 0.0081472596471832
+tan_p2: -0.003953269547434038 +- 0.0031543137273274562
+rad_k3: -0.0006813636312138101 +- 0.0004445510606225928
+Map Scale: 0.636352748919951 +- 0.337245070511261
+
+
+------- Final Depth Intrinsics -------------
+fx:      510.9625289119731 +- 0.9126396293736609
+fy:      511.6690535462653 +- 0.6820568131055924
+cx: 512.5884119385696 +- 0.7055202333204983
+cy: 512.0067306963084 +- 0.6744915286355995
+rad_k1: -0.02889249660020417 +- 0.005286168085223204
+rad_k2: -0.0029424647477783793 +- 0.0010775483570068156
+tan_p1: -0.023723825828355475 +- 0.007539774332741806
+tan_p2: -0.037003120513427926 +- 0.009209030417349736
+rad_k3: -0.0002861526318447396 +- 0.00035144785529661946
+
+
+------- Final RGB(L)-D Extrinsic Parameters -------------
+R_d_rgb:     [[ 0.87407483  0.29986364  0.38219758]
+ [-0.24700185  0.9517947  -0.18187066]
+ [-0.41831003  0.06456506  0.90600666]]
+t_d_rgb:     [0.12839641 0.04179381 0.02107708] +- [0.02806563 0.02716285 0.05573111]
+
+
+------- Final RGB(L)-IMU Extrinsic Parameters -------------
+Ric:     [[-0.01144561 -0.00680783  0.99991132]
+ [ 0.99932974  0.03469514  0.01167517]
+ [-0.03477154  0.99937475  0.00640616]]
+tic:     [-0.48925944  0.54262863  2.18201156] +- [2.62333417 0.46717709 0.53563069]
+
+
+------- Final IMU Intrinsic Parameters -------------
+tic:     0.004985835081785788 +- 0.00026574588658979714
+bwx:     4.356677619008924e-06 +- 3.234764934132884e-06
+bwy:     4.974430993000625e-06 +- 6.994557399782832e-06
+bwz:     4.625734629306285e-06 +- 2.7169205094699745e-06
+bax:     0.0002568083485071956 +- 0.0002141950094915076
+bay:     0.0002463368079490281 +- 3.349885002859127e-05
+baz:     -0.0002477506531554137 +- 3.302352747310682e-05
+
+------------Level 1 Optimization------------
+
+
+--------------------Relative Pose Error Analysis--------------------
+
+compared_pose_pairs 351 pairs
+translational_error.rmse 0.012062 m
+translational_error.mean 0.007729 m
+translational_error.median 0.004771 m
+translational_error.std 0.009260 m
+translational_error.min 0.000072 m
+translational_error.max 0.070255 m
+rotational_error.rmse 1.901848 deg
+rotational_error.mean 1.634517 deg
+rotational_error.median 1.500096 deg
+rotational_error.std 0.972307 deg
+rotational_error.min 0.164604 deg
+rotational_error.max 7.190071 deg
+
+------------Level 2 Optimization------------
+
+
+--------------------Relative Pose Error Analysis--------------------
+
+compared_pose_pairs 351 pairs
+translational_error.rmse 0.022998 m
+translational_error.mean 0.013212 m
+translational_error.median 0.007269 m
+translational_error.std 0.018824 m
+translational_error.min 0.000106 m
+translational_error.max 0.209509 m
+rotational_error.rmse 6.370838 deg
+rotational_error.mean 3.821087 deg
+rotational_error.median 2.711954 deg
+rotational_error.std 5.097732 deg
+rotational_error.min 0.253106 deg
+rotational_error.max 64.726284 deg
